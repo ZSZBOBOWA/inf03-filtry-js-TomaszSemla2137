@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+<h2>Efekty na obrazach</h2>
+    </header>
+
+
+<div class="Blok1">
+<img src="pszczola.jpg" alt="Pszczoła na fioletowym kwiatku">
+<form>
+    <label><input type="checkbox" name="Blur" value="Blur">Blur</label><br>
+    <label><input type="checkbox" name="Sepia" value="Sepia">Sepia</label><br>
+    <label><input type="checkbox" name="Negatyw" value="Negatyw">Negatyw</label><br>
+    <button type="submit">Zastosuj</button>
+</form>
+</div>
+
+<div class="Blok2">
+    <img src="pomarancza.jpg" alt="Drzewo pomarańczy">
+    <form>
+        <button type="button" onclick="Kolorowy()">Kolorowy</button>
+        <button type="button" onclick="Czarno_biały()">Czarno-biały</button>
+    </form>
+</div>
+
+<div class="Blok3">
+    <img src="owoce.jpg" alt="Kosz pełen owoców">
+    <form>
+        <label>Jasność</label>
+        <input type=" range" id="jasnosc" name="jasnosc" min="0" max="100" value="100" oninput="zmienJasnosc(this.value)">
+    </form>
+</div>
+
+<div class="Blok4">
+    <img src="zolw.jpg" alt="Zółw w wodzie">
+<form>
+        
+    </form>
+</div>
+
+    
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
